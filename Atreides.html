@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <meta name="PMP main" content="PSPad editor, www.pspad.com">
+  <title>My Dune2000 page</title>
+  <link rel="stylesheet" href="styly.css">
+</head>
+<body>
+    <aside class="rocket">
+        <a href="#ScrollToTop">
+            <img src="deathhand.gif" style="width: 20px" class="shining_atre">
+        </a>
+    </aside>
+
+    <aside class="sidebar atre">
+        <h>Orientation</h>
+        <ul>
+            <li>Buildings
+                <ol>
+                    <li><a href="#Windtrap" class="atre">Windtrap</a></li>
+                    <li><a href="#Refinery" class="atre">Refinery</a></li>
+                    <li><a href="#Silo" class="atre">Silo</a></li>
+                    <li><a href="#Heavy_factory" class="atre">Construction Yard</a></li>
+                </ol>
+            </li>
+            <li>Units
+                <ol>
+                    <li><a href="#Sonic" class="atre">Sonic</a></li>
+                </ol>
+            </li>
+        </ul>
+    </aside>
+
+    <table>
+        <tr>
+            <th colspan=5 class="dune_head" id="ScrollToTop">Dune 2000</th>
+        </tr>
+        <tr>
+            <td><a href=index.html class="main_head">Home Page</a></td>
+            <td><a href=Atreides.html class="atre_head">House Atreides</a></td>
+            <td><a href=Harkonnen.html class="hark_head">House Harkonnen</a></td>
+            <td><a href=Ordos.html class="ord_head">House Ordos</a></td>
+            <td><a href=Other.html class="other_head">Other</a></td>
+        </tr>
+    </table>
+
+    <main class="atre">
+        <p class="atre">
+            Not there yet :/, check out Harkonnen!
+        </p>
+    </main>
+
+    <button class="cat-button" onclick="showRandomImage()">
+        <img src="Pictures\Cat_button.png" alt="pic for Aisi">
+    </button>
+    
+    <div class="popup-overlay" id="popup">
+        <div class="popup_content_atre">
+            <img id="random-image" src="" alt="Random Image">
+            <h2 class="atre">For Aisi</h2>
+        </div>
+    </div>
+
+
+    <script>
+        const imagePool = [
+            "meow0.jpg",
+            "meow1.jpg",
+            "meow2.jpg",
+            "meow3.jpg",
+            "meow4.jpg",
+            "meow5.jpg",
+            "meow6.jpg",
+            "meow7.jpg",
+            "meow8.jpg",
+            "meow9.jpg",
+            "meow10.jpg",
+            "meow11.jpg",
+            "meow12.jpg",
+            "meow13.jpg",
+            "meow14.jpg",
+            "meow15.jpg",
+            "meow16.jpg",
+            "meow17.jpg"
+        ];
+        function getRandomImage() {
+            const randomIndex = Math.floor(Math.random() * imagePool.length);
+            return "Pictures/Meow/" + imagePool[randomIndex];
+        }
+        function showRandomImage() {
+            const popup = document.getElementById('popup');
+            const imgElement = document.getElementById('random-image');
+            imgElement.src = getRandomImage();
+            popup.style.display = 'flex';
+        }
+        function hidePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+        document.getElementById('popup').addEventListener('click', function(e) {
+            if (e.target === this) {
+                hidePopup();
+            }
+        });
+    </script>
+</body>
+</html>
