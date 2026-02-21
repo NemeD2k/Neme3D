@@ -338,3 +338,74 @@ h1 { /*titles*/
 	max-width: 80%;
 	max-height: 80%;
 }
+
+
+
+
+
+
+
+
+/* ===== HARKONNEN (Red) ===== */
+html.house_harkonnen {
+    scrollbar-width: thin;
+    scrollbar-color: #6a1a1a #0d0603;
+}
+
+html.house_harkonnen::-webkit-scrollbar {
+    width: 12px;
+}
+
+html.house_harkonnen::-webkit-scrollbar-track {
+    background: #0d0603;
+    border: 1px solid #6a1a1a;
+}
+
+html.house_harkonnen::-webkit-scrollbar-thumb {
+    background: #6a1a1a;
+    border-radius: 6px;
+    border: 2px solid #8b0000;
+}
+
+
+/* ===== ATREIDES (Blue) ===== */
+html.house_atreides {
+    scrollbar-width: thin;
+    scrollbar-color: #2a4a6a #0a1420;
+}
+
+html.house_atreides::-webkit-scrollbar {
+    width: 12px;
+}
+
+html.house_atreides::-webkit-scrollbar-track {
+    background: #0a1420;
+    border: 1px solid #2a4a6a;
+}
+
+html.house_atreides::-webkit-scrollbar-thumb {
+    background: #2a4a6a;
+    border-radius: 6px;
+    border: 2px solid #4a7a9c;
+}
+
+/* ===== ORDOS (Green) ===== */
+html.house_ordos {
+    scrollbar-width: thin;
+    scrollbar-color: #2a4a2a #1a1f1a;
+}
+
+html.house_ordos::-webkit-scrollbar {
+    width: 12px;
+}
+
+html.house_ordos::-webkit-scrollbar-track {
+    background: #1a1f1a;
+    border: 1px solid #2a4a2a;
+}
+
+html.house_ordos::-webkit-scrollbar-thumb {
+    background: #2a4a2a;
+    border-radius: 6px;
+    border: 2px solid #4a784a;
+}
